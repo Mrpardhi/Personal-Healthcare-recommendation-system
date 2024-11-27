@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us</title>
+    <link rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <nav>
+            <ul>
+                <li><a href="/">Home</a></li>
+                <li><a href="/project_description">Project Description</a></li>
+                <li><a href="/result">Result</a></li>
+                <li><a href="/contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="container">
+        <h1>Contact Us</h1>
+        <p class="contact-info">For more information, reach out to us:</p>
+        <ul class="contact-details">
+            <li><strong>Contact Number:</strong> +91 78736663665</li>
+            <li><strong>Email:</strong> mohit@healthrecommendation.com</li>
+            <li><strong>Website:</strong> www.healthrecommendation.com</li>
+            <li><strong>Location:</strong> Gh raisoni , Nagpur</li>
+            <li><strong>Working Hours:</strong> Mon - Fri, 9:00 AM - 6:00 PM</li>
+        </ul>
+        <form id="contactForm">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="message">Message:</label>
+            <textarea id="message" name="message" required></textarea>
+
+            <button type="submit">Send Message</button>
+            <p id="response" style="display: none;"></p> <!-- For displaying response message -->
+        </form>
+    </div>
+
+    <footer>
+        <p>&copy; 2024 Disease Prediction. All rights reserved.</p>
+    </footer>
+
+    <script src="/static/contact.js"></script>
+</body>
+</html>

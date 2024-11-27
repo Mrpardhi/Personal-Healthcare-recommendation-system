@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prediction Result</title>
+    <link rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <nav>
+            <ul>
+                <li><a href="/">Home</a></li>
+                <li><a href="{{ url_for('result') }}">Result</a></li>
+            </ul>
+        </nav>
+        <h1>Prediction Result</h1>
+    </header>
+
+    <div class="container">
+        <p><strong>Predicted Disease:</strong> {{ disease }}</p>
+        <p><strong>Suggestion:</strong> {{ suggestion }}</p>
+        <p><strong>Yoga Plan:</strong> {{ yoga_plan }}</p>
+        <p><strong>Diet Plan:</strong> {{ diet_plan }}</p>
+        <a href="/">Make another prediction</a>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2024 Disease Prediction. All rights reserved.</p>
+    </footer>
+</body>
+</html>
